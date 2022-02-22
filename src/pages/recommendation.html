@@ -62,9 +62,38 @@
         </div>
     </div>
     <div class=" main vertical overflow-y">
-        <div class="title horizontal--start w-100">
-            <span class="title__text">상담추천목록 생성</span>
-            <span class="title__subtext">원하는 조건으로 상담희망목록을 만들 수 있습니다.</span>
+        <div class="title horizontal--between">
+            <div class="horizontal--start">
+                <span class="title__text">상담추천목록 생성</span>
+                <span class="title__subtext">원하는 조건으로 상담희망목록을 만들 수 있습니다.</span>    
+            </div>        
+            <div class="horizontal--start">
+                <a href="http://www.kotra.or.kr" class="important">Tribig 바로가기</a>
+                <div class="burger-wrap">
+                    <!-- burger-menu에 burger-menu--active클래스 추가시 활성화 -->
+                    <div class="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="burger-menu vertical overflow-y">
+                        <ul class="burger-menu__list vertical">
+                            <li class="burger-menu__item">
+                                <button class="button button--link burger-menu__button">매칭 작업 생성</button>
+                            </li>
+                            <li class="burger-menu__item">
+                                <button class="button button--link burger-menu__button">상담추천목록</button>
+                            </li>
+                            <li class="burger-menu__item">
+                                <button class="button button--link burger-menu__button">상담추천목록관리</button>
+                            </li>
+                            <li class="burger-menu__item">
+                                <button class="button button--link burger-menu__button">상담추천목록관리상담추천목록관리상담추천목록관리</button>
+                            </li>                       
+                        </ul>
+                    </div>
+                </div>
+            </div>            
         </div>
         <div class="body vertical overflow-y">
             <div class="body-contents">
@@ -150,7 +179,7 @@
                             </button>
                         </div>
                     </div>
-                    <input type="text" placeholder="Search" class="input text-input__search">
+                    <input type="text" placeholder="Search" class="input text-input__search" style="flex-grow: 1;">
                     <button class="button button--normal button--primary">검색</button>
                 </div>
             </div>

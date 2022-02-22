@@ -222,8 +222,87 @@ svg {
 }
 
 .important {
-  color: #0055a2;
+  color: #0055a2 !important;
   font-weight: 600;
+}
+
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.burger-wrap {
+  position: relative;
+  padding-left: 8px;
+}
+
+.burger {
+  width: 30px;
+  height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.burger span {
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.burger:hover {
+  opacity: 0.5;
+}
+
+.burger-menu {
+  position: absolute;
+  top: 30px;
+  right: 15px;
+  width: 150px;
+  border: 1px solid #888888;
+  background-color: #ffffff;
+  border-radius: 2px;
+  display: none;
+  z-index: 9;
+  overflow-y: auto;
+  max-height: 200px;
+}
+
+.burger-menu.burger-menu--active {
+  display: block;
+}
+
+.burger-menu__button {
+  width: 100%;
+  text-align: left;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+
+.burger-menu__button:hover {
+  background-color: rgba(239, 239, 239, 0.5);
+  font-weight: 600;
+}
+
+.burger-menu__button:active {
+  color: #0055a2;
 }
 
 @keyframes fade {
@@ -243,9 +322,6 @@ svg {
   padding: 8px;
   font-size: 0.85rem;
   font-weight: normal;
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
   height: 34px;
   white-space: nowrap;
 }
@@ -905,8 +981,8 @@ input:read-only {
   -webkit-transform-origin: left top;
           transform-origin: left top;
   opacity: 0;
-  -webkit-animation: fade 1.2s linear infinite;
-          animation: fade 1.2s linear infinite;
+  -webkit-animation: fade 0.9s linear infinite;
+          animation: fade 0.9s linear infinite;
 }
 
 .loader-spinner__spoke:nth-child(1) {
@@ -1596,6 +1672,7 @@ tbody > *:nth-child(2n) {
   margin: 0 auto;
   border-bottom: 1px solid #888888;
   padding: 16px;
+  width: 100%;
 }
 
 .title__text {
