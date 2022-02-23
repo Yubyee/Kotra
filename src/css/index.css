@@ -289,6 +289,11 @@ svg {
   display: block;
 }
 
+.burger-menu__item.burger-menu__item--selected button {
+  font-weight: 600;
+  color: #0055a2;
+}
+
 .burger-menu__button {
   width: 100%;
   text-align: left;

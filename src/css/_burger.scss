@@ -47,7 +47,10 @@
 }
 
 .burger-menu__item{
-    
+    &.burger-menu__item--selected button{
+        font-weight: 600;
+        color: $primary;
+    }
     
 }
 
