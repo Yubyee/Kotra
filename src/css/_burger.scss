@@ -37,6 +37,7 @@
     z-index: 9;
     overflow-y: auto;
     max-height: 200px;
+    
     &.burger-menu--active{
         display: block;
     }
@@ -54,7 +55,7 @@
 }
 
 .burger-menu__text{
-    display: inline-block; 
+    display: block; 
     cursor: pointer;  
     transition: 0.3s;    
     @include padding--xs;
@@ -68,8 +69,6 @@
 
     &:hover {
         background-color: rgba($color: $backgraound-hover, $alpha: 0.5);
-        // font-weight: 600;
-        color: #444;
     }
 
     &:active {

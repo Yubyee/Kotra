@@ -295,7 +295,7 @@ svg {
 }
 
 .burger-menu__text {
-  display: inline-block;
+  display: block;
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -312,7 +312,6 @@ svg {
 
 .burger-menu__text:hover {
   background-color: rgba(239, 239, 239, 0.5);
-  color: #444;
 }
 
 .burger-menu__text:active {
