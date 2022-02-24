@@ -47,22 +47,31 @@
 }
 
 .burger-menu__item{
-    &.burger-menu__item--selected button{
+    &.burger-menu__item--selected a{
         font-weight: 600;
         color: $primary;
-    }
-    
+    }    
 }
 
-.burger-menu__button{   
+.burger-menu__text{
+    display: inline-block; 
+    cursor: pointer;  
+    transition: 0.3s;    
+    @include padding--xs;
+    @include font--sm;     
+    white-space: nowrap;
     width: 100%;
     text-align: left;
     overflow-x: hidden;
     text-overflow: ellipsis;
+    text-decoration: none;
+
     &:hover {
         background-color: rgba($color: $backgraound-hover, $alpha: 0.5);
-        font-weight: 600;
+        // font-weight: 600;
+        color: #444;
     }
+
     &:active {
         color: $primary;
     }

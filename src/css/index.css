@@ -289,24 +289,33 @@ svg {
   display: block;
 }
 
-.burger-menu__item.burger-menu__item--selected button {
+.burger-menu__item.burger-menu__item--selected a {
   font-weight: 600;
   color: #0055a2;
 }
 
-.burger-menu__button {
+.burger-menu__text {
+  display: inline-block;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding: 8px;
+  font-size: 0.85rem;
+  font-weight: normal;
+  white-space: nowrap;
   width: 100%;
   text-align: left;
   overflow-x: hidden;
   text-overflow: ellipsis;
+  text-decoration: none;
 }
 
-.burger-menu__button:hover {
+.burger-menu__text:hover {
   background-color: rgba(239, 239, 239, 0.5);
-  font-weight: 600;
+  color: #444;
 }
 
-.burger-menu__button:active {
+.burger-menu__text:active {
   color: #0055a2;
 }
 
