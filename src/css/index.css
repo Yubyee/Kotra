@@ -956,6 +956,37 @@ input:read-only {
   }
 }
 
+.intro-wrap {
+  background-color: aqua;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.intro-title {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 36px;
+}
+
+.intro-title__main {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.intro-title__sub {
+  font-size: 1.25rem;
+  font-weight: normal;
+}
+
+.intro-button-group {
+  background-color: antiquewhite;
+}
+
 @keyframes fade {
   from {
     opacity: 1;
