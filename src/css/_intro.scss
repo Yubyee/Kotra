@@ -1,7 +1,7 @@
 @import "_style.scss";
 
 .intro-wrap{
-    background-color: aqua;
+    // background-color: aqua;
     position: absolute;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
@@ -20,6 +20,58 @@
     @include font--md;
 }
 
+.intro-button-group-wrap{
+    @include padding-top--lg;
+    align-items: flex-start
+}
+
 .intro-button-group{
-    background-color: antiquewhite;
+    & + &{
+        @include margin-left--xl;
+    }
+}
+
+
+.button--intro{
+    background-color: $backgraound-white;
+    border: 2px solid $primary;
+    width: 350px;
+    height: 200px;
+    @include margin-bottom--lg;
+
+    &:hover{
+        background-color: $primary;
+        
+        span{
+            color: #ffff;
+        }
+    }
+
+    &:active{
+        background-color: rgba($color: $primary, $alpha: 0.7)
+    }
+}
+
+.intro-button-title__main{
+    @include font--xl;
+    @include padding-bottom--xs;
+}
+
+.intro-button-title__sub{
+    @include font--md;
+}
+
+.intro-button-detail{
+    @include padding--xs;
+}
+
+.intro-button-detail__main{
+    @include font--lg;
+    @include margin-bottom--md;
+    text-align: center;
+}
+
+.intro-button-detail__sub{
+    @include font--basic;
+    text-align: center;
 }

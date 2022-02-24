@@ -327,6 +327,9 @@ svg {
   padding: 8px;
   font-size: 0.85rem;
   font-weight: normal;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   height: 34px;
   white-space: nowrap;
 }
@@ -957,7 +960,6 @@ input:read-only {
 }
 
 .intro-wrap {
-  background-color: aqua;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -974,8 +976,8 @@ input:read-only {
 }
 
 .intro-title__main {
-  font-size: 2rem;
-  font-weight: 600;
+  font-size: 3rem;
+  font-weight: 700;
 }
 
 .intro-title__sub {
@@ -983,8 +985,63 @@ input:read-only {
   font-weight: normal;
 }
 
-.intro-button-group {
-  background-color: antiquewhite;
+.intro-button-group-wrap {
+  padding-top: 36px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.intro-button-group + .intro-button-group {
+  margin-left: 36px;
+}
+
+.button--intro {
+  background-color: #ffffff;
+  border: 2px solid #0055a2;
+  width: 350px;
+  height: 200px;
+  margin-bottom: 24px;
+}
+
+.button--intro:hover {
+  background-color: #0055a2;
+}
+
+.button--intro:hover span {
+  color: #ffff;
+}
+
+.button--intro:active {
+  background-color: rgba(0, 85, 162, 0.7);
+}
+
+.intro-button-title__main {
+  font-size: 1.75rem;
+  font-weight: 600;
+  padding-bottom: 8px;
+}
+
+.intro-button-title__sub {
+  font-size: 1.25rem;
+  font-weight: normal;
+}
+
+.intro-button-detail {
+  padding: 8px;
+}
+
+.intro-button-detail__main {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.intro-button-detail__sub {
+  font-size: 1rem;
+  font-weight: normal;
+  text-align: center;
 }
 
 @keyframes fade {

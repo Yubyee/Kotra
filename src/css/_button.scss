@@ -6,7 +6,7 @@
     transition: 0.3s;    
     @include padding--xs;
     @include font--sm;     
-    // min-width: fit-content;
+    min-width: fit-content;
     height: 34px;
     white-space: nowrap;
 }
