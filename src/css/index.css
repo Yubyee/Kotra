@@ -312,6 +312,7 @@ svg {
 
 .burger-menu__text:hover {
   background-color: rgba(239, 239, 239, 0.5);
+  color: #333;
 }
 
 .burger-menu__text:active {
